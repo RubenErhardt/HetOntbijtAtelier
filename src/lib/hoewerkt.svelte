@@ -146,6 +146,14 @@
       font-size: 1.8rem;
       left: -1.5rem;
     }
+
+    @media (max-width: 768px) {
+  .step-item {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+  }
+}
+
   }
 </style>
 
