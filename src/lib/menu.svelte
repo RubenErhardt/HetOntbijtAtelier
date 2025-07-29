@@ -1,45 +1,46 @@
-
 <script>
   export let ontbijtjes = [
     {
-      naam: 'Croissant Deluxe',
-      beschrijving: 'Verse croissant met roomboter en jam, geserveerd met jus d’orange.',
-      prijs: '€4,50',
-      emoji: '🥐'
+      naam: 'Basic Ontbijtpakket',
+      beschrijving: `Een perfect ontbijt voor een rustige ochtend. 
+      Bevat:
+– 2 verse croissants met roomboter & aardbeienjam
+– Gekookt scharreleitje
+– Versgeperste jus d’orange (250ml)
+– Mini yoghurt met honing en granola
+– Plak bananenbrood
+– Thee naar keuze (zakje) of filterkoffie`,
+      prijs: '€14,95',
     },
     {
-      naam: 'Avocado Toast',
-      beschrijving: 'Toast met avocado, limoen, pepervlokken en gepocheerd ei.',
-      prijs: '€7,00',
-      emoji: '🥑'
+      naam: 'Medium Ontbijtpakket',
+      beschrijving: `Voor wie net wat meer wil. 
+      Bevat:
+– 2 croissants met boter & jam
+– Avocado toast met gepocheerd ei
+– Yoghurtbeker met granola & fruit
+– Smoothie (300ml)
+– Muffin of cake
+– Notenbrood met roomkaas
+– Jus d’orange én koffie of cold brew`,
+      prijs: '€21,50',
     },
     {
-      naam: 'Yoghurt Parfait',
-      beschrijving: 'Granola met Griekse yoghurt en honing.',
-      prijs: '€5,00',
-      emoji: '🍓'
-    },
-    {
-      naam: 'Klassiek Ontbijt',
-      beschrijving: 'Roerei, bacon, toast en koffie of thee.',
-      prijs: '€8,50',
-      emoji: '🍳'
-    },
-    {
-      naam: 'Smoothie Bowl',
-      beschrijving: 'Banaan, bessen, kokos, chiazaad en havermout.',
-      prijs: '€6,50',
-      emoji: '🍌'
-    },
-    {
-      naam: 'Pannenkoekjes',
-      beschrijving: 'Pancakes met maple syrup en bessen.',
-      prijs: '€6,00',
-      emoji: '🥞'
+      naam: 'Luxe Ontbijtpakket',
+      beschrijving: `Voor speciale momenten. 
+      Bevat:
+– Luxe broodassortiment (croissants, pain au chocolat, zuurdesemtoast)
+– Hartige selectie: kaas, prosciutto, hummus, truffelmayonaise
+– Mini pancakes met maple syrup & bessen
+– Vers fruit
+– Yoghurt met noten & fruitcompote
+– Smoothie en jus d’orange (beide 300ml)
+– Mini-cheesecake
+– Premium thee + keuze uit cappuccino / latte / cold brew`,
+      prijs: '€29,95',
     }
   ];
 </script>
-
 
 <section id="menu" class="menu-section" aria-label="Ontbijtmenu">
   <div class="container">
@@ -47,7 +48,7 @@
     <div class="grid">
       {#each ontbijtjes as ontbijt}
         <article class="menu-item" aria-labelledby={ontbijt.naam}>
-             <div class="emoji" aria-hidden="true">{ontbijt.emoji}</div>
+          <div class="emoji" aria-hidden="true">{ontbijt.emoji}</div>
           <h3 id={ontbijt.naam}>{ontbijt.naam}</h3>
           <p class="desc">{ontbijt.beschrijving}</p>
           <p class="prijs">{ontbijt.prijs}</p>
@@ -85,7 +86,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65); /* donkere laag boven de afbeelding */
+  background: rgba(0, 0, 0, 0.65);
   z-index: -1;
 }
 
@@ -100,38 +101,46 @@
 .grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .menu-item {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 10px;
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: transform 0.3s ease;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .menu-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
 .menu-item h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
 .menu-item .desc {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2px;
 }
 
 .menu-item .prijs {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Fade-in animatie */
@@ -147,7 +156,19 @@
   }
 
   .menu-item {
-    padding: 1rem;
+    padding: 1.2rem;
+  }
+
+  .menu-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu-item .desc {
+    font-size: 0.95rem;
+  }
+
+  .menu-item .prijs {
+    font-size: 1.1rem;
   }
 }
 </style>

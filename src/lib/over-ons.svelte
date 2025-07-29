@@ -3,19 +3,24 @@
     <h2 class="section-title">Over ons</h2>
     <div class="about-content">
       <p>
-        Wij zijn <strong>Ruben</strong> en <strong>Ryan</strong>, vrienden sinds de brugklas. 
-        Vanuit onze gedeelde passie voor goed eten, samenkomen en ondernemen ontstond het idee voor ons eigen ontbijtatelier.
+        Wij zijn <strong>Ruben</strong> en <strong>Ryan</strong>, vrienden sinds de brugklas en liefhebbers van goed eten. Vanuit onze passie ontstond het idee voor <strong>Het Ontbijt Atelier</strong>, waar we de dag willen beginnen met rust, aandacht en kwaliteit.
       </p>
       <p>
-        Met <strong>Het Ontbijt Atelier</strong> willen we de dag beginnen met kwaliteit, zorg en aandacht — 
-        voor zowel onze gasten als voor de planeet. We werken met lokale producten, beperken verspilling en streven naar een duurzame beleving in alles wat we doen.
+        In veel hotels leidt het ontbijtbuffet tot verspilling: broodjes die overblijven, beleg dat weggegooid wordt, en producten die nooit worden gegeten. Daarom hebben wij een duurzaam alternatief ontwikkeld: <strong>luxe ontbijtboxen op bestelling, speciaal voor hotels.</strong>
       </p>
+      <ul>
+        <li>Vers, ambachtelijk en met aandacht bereid.</li>
+        <li>Bezorgd op de kamer of aan tafel – zonder verspilling, voorraad of zorgen.</li>
+        <li>U bestelt precies wat u nodig heeft.</li>
+      </ul>
       <p>
-        Elke ochtend is een nieuw begin, en wij zorgen ervoor dat dat begin vers, eerlijk en onvergetelijk is.
+        Zo zorgen we samen voor een betere ontbijtbeleving — eerlijk voor onze gasten en vriendelijk voor de planeet.
       </p>
+      <p><em>Kwaliteit. Beleving. Minder verspilling. Dat is waar wij in geloven.</em></p>
     </div>
   </div>
 </section>
+
 
 <style>
 .about-section {
