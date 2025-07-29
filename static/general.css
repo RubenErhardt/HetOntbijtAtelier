@@ -65,8 +65,9 @@ a:hover {
 .mb-4 { margin-bottom: 1rem; }
 
 @media (max-width: 768px) {
-  .menu-section::before {
+ html, body {
     background-attachment: scroll; /* zet fixed uit op mobiel */
   }
 }
+
 
