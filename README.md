@@ -28,7 +28,7 @@ Technologieën die ik gebruik in dit project:
 ## 🎯 Status
 
 De website is momenteel in ontwikkeling.  
-De focus ligt op een strak en minimalistisch design met oog voor responsiveness en toegankelijkheid.
+De focus ligt op een strak en modern, luxe design met oog voor responsiveness en toegankelijkheid.
 
 ## 📁 Structuur
 
