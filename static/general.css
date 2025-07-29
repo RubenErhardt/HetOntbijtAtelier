@@ -64,3 +64,9 @@ a:hover {
 .mt-4 { margin-top: 1rem; }
 .mb-4 { margin-bottom: 1rem; }
 
+@media (max-width: 768px) {
+  .menu-section::before {
+    background-attachment: scroll; /* zet fixed uit op mobiel */
+  }
+}
+
