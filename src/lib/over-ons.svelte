@@ -57,6 +57,9 @@
 @media (max-width: 600px) {
   .section-title {
     font-size: 2.2rem;
+      align-items: center;
+  display: flex;
+  justify-content: center;
   }
 
   .about-content {
