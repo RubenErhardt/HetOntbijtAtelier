@@ -12,15 +12,20 @@
 /* 📱 Basis html/body styling */
 html, body {
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-image: url('/breakfast-with-muffins-coffee-copy-space.jpg'); 
+  background-image: url('/french-croissants-coffee-copy-space.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #333;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* 🧾 Typografie */
 h1, h2, h3, h4, h5, h6 {
