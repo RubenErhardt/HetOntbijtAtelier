@@ -1,41 +1,38 @@
-# HetOntbijtAtelier
+# sv
 
-# Ontbijt Atelier Website
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-Welkom bij de repository voor de website van **Het Ontbijt Atelier**.  
-In dit project werk ik aan een moderne, responsive en gebruiksvriendelijke website voor Het Ontbijt Atelier, een plek waar ambacht, sfeer en smaak samenkomen.
+## Creating a project
 
-## 🔧 Doel van dit project
+If you're seeing this, you've probably already done this step. Congrats!
 
-De website dient als online visitekaartje van Het Ontbijt Atelier.  
-Bezoekers moeten hier gemakkelijk informatie kunnen vinden over:
+```sh
+# create a new project in the current directory
+npx sv create
 
-- Het concept
-- Openingstijden
-- Menu en specialiteiten
-- Locatie en contact
-- Eventuele reserveringen of bestellingen
+# create a new project in my-app
+npx sv create my-app
+```
 
-## ⚙️ Tech stack
+## Developing
 
-Technologieën die ik gebruik in dit project:
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-- HTML5 / CSS3
-- JavaScript
-- [Framework hier invullen, bijvoorbeeld SvelteKit of Webflow]
-- [Eventueel extra tools zoals animaties, CMS, etc.]
+```sh
+npm run dev
 
-## 🎯 Status
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-De website is momenteel in ontwikkeling.  
-De focus ligt op een strak en modern, luxe design met oog voor responsiveness en toegankelijkheid.
+## Building
 
-## 📁 Structuur
+To create a production version of your app:
 
-```bash
-📁 src/
-  └── components/
-  └── pages/
-  └── assets/
-📄 index.html
-📄 README.md
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
