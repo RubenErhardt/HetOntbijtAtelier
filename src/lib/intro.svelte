@@ -73,6 +73,9 @@
   .intro h1 {
     font-size: 2.25rem;
   }
+  .intro{
+      min-height: 90vh;
+  }
   .intro p {
     font-size: 1rem;
   }
